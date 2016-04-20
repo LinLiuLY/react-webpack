@@ -1,7 +1,18 @@
  
 Run `npm i`
 
-# Excercises
+### babelrc
+.babelrc is kinda a necessity now. 
+Since Babel no longer uses ES2015 and React transforms by default, 
+the require hook used by gulpfile.babel.js and mocha will not actually do anything. 
+Fix this by creating a .babelrc in your project directory:
+
+```
+{
+  "presets": ["es2015", "react"]
+}
+
+```
 
 ## Webpack configuration for dev
 
